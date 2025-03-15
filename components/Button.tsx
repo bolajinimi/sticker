@@ -12,7 +12,8 @@ export default function Button({ label, onPress, theme }: Props) {
     return (
         <View style={styles.container}>
             <Pressable 
-                style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
+                // style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
+                style={styles.button}
                 onPress={onPress}
                 android_ripple={{ color: "#388E3C" }}
             >
